@@ -1,16 +1,24 @@
 {
-  "name": "piknikyuk",
+  "name": "travelgaes",
   "version": "1.0.0",
-  "description": "",
+  "description": "travelgaes web design",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Yulyanes",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "materialize-css": "^1.0.0-rc.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanesgreen/travelgaes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yanesgreen/travelgaes/issues"
+  },
+  "homepage": "https://github.com/yanesgreen/travelgaes#readme"
 }
