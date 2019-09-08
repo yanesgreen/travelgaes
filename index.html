@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#3F51B5" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="TravelGaes Website">
+    <meta name="description" content="Hello there! Welcome to my Travelgaes webpage." />
+    <title>travelGaes</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .row-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-flex .row-flex--item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        .filter-gelap {
+            -webkit-filter: brightness(50%);
+            /* Safari 6.0 - 9.0 */
+            filter: brightness(50%);
+        }
+
+        .underline {
+            border-bottom: 0.125em solid #f50057;
+        }
+
+        .box {
+            height: 100px;
+            background: greenyellow;
+        }
+
+        .sosmed-icon {
+            margin: 0 0.5em 0 0.5em;
+        }
+
+        .pink-on-hover {
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        .pink-on-hover:hover {
+            color: deeppink;
+        }
+
+        .icon-prefix {
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+
+<body id="home">
+
+    <!--navbar start-->
+    <div class="navbar">
+        <nav class="indigo">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo light">travelGaes</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#search-section">Cari</a></li>
+                        <li><a href="#popular-place-section">Wisata Populer</a></li>
+                        <li><a href="#gallery-section">Album Foto</a></li>
+                        <li><a href="#contact-us-section" class="pink waves-effect waves-light btn">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--navbar end-->
+
+    <!--side nav start-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cari</a></li>
+        <li><a href="#">Wisata Populer</a></li>
+        <li><a href="#">Album Foto</a></li>
+        <li class="#"><a class="indigo accent-4 waves-effect waves-light btn">Hubungi Kami</a></li>
+    </ul>
+    <!--side nav end-->
+
+    <!-- slider start-->
+    <section class="slider">
+        <ul class="slides">
+
+            <!--slide one-->
+            <li>
+                <img class="filter-gelap" src="img/raja-ampat.jpg">
+                <div class="caption center-align">
+                    <h3>Wujudkan <span class="indigo-text text-lighten-3">Wisata</span> Impianmu</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-and-down">Luangkan waktu untuk dirimu
+                        sendiri.
+                        Sesekali manjakan dirimu, dan wujudkan wisata impianmu bersama kami. </h5>
+                </div>
+            </li>
+
+            <!--slide two-->
+            <li>
+                <img class="filter-gelap" src="img/bali.jpg">
+                <div class="caption left-align">
+                    <h3>Harga <span class="indigo-text text-lighten-3">Wisata</span> Terbaik Disini.</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-and-down">Luxury travel, best-budget travel
+                        atau
+                        backpacker? Kami punya semuanya.</h5>
+                    <a class="btn pink" href="https://www.yanestudio.web.id">cek harga</a>
+                </div>
+            </li>
+
+
+            <!--slide three-->
+            <li>
+                <img class="filter-gelap" src="img/resort3.jpg">
+                <div class="caption right-align">
+                    <h3>Paket <span class="indigo-text text-lighten-3">Terbaik</span> Untuk Anda</h3>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-and-down">Single traveller, honeymoon,
+                        family Vacation atau group gathering? Selalu ada paket spesial untuk anda.</h5>
+                    <a class="btn pink" href="https://www.yanestudio.web.id">cek paket</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--slider end-->
+
+    <!--search section start-->
+    <section id="search-section" class="section indigo lighten-1 section-search darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="light" style="margin-bottom: 1em"><span class="underline">Ayo liburan!</span><span
+                            class="hide-on-small-only"> Temukan wisata
+                            impianmu disini.</span></h3>
+                    <!--c!rd search start-->
+                    <div class="card z-depth-3" style="padding: 0.25em; margin-bottom: 2em;">
+                        <div class="nav-wrapper">
+                            <form>
+                                <div class="input-field">
+                                    <input id="searchInput" type="search" placeholder="coba Bali, Lombok atau Bunaken"
+                                        required>
+                                    <label class="label-icon" for="searchInput"><i
+                                            class="material-icons">search</i></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--card search end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--search section end-->
+
+    <!--icon box start-->
+    <section class="section grey lighten-4 center">
+        <div class="container">
+            <h3 class="indigo-text light">Liburan Tanpa Ribet</h3>
+            <div class="row">
+
+                <!-- 1st box-->
+                <div class="col s12 m4">
+                    <!--card start-->
+                    <div class="card-panel">
+                        <i class="material-icons large indigo-text">search</i>
+                        <h4 class="indigo-text light">Cari Lokasi</h4>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, repudiandae.</p>
+                    </div>
+                    <!--card end-->
+                </div>
+
+                <!-- 2nd box-->
+                <div class="col s12 m4">
+                    <!--card start-->
+                    <div class="card-panel">
+                        <i class="material-icons large indigo-text">touch_app</i>
+                        <h4 class="indigo-text light">Pilih Paketnya</h4>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, repudiandae.
+                    </div>
+                    <!--card end-->
+                </div>
+
+                <!-- 3rd box-->
+                <div class="col s12 m4">
+                    <!--card start-->
+                    <div class="card-panel">
+                        <i class="material-icons large indigo-text">sentiment_satisfied_alt</i>
+                        <h4 class="indigo-text light">Liburan Hebat</h4>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, repudiandae.</p>
+                    </div>
+                    <!--card end-->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--iconbox end-->
+
+    <!-- popular place start -->
+    <section id="popular-place-section" class="section container scrollspy">
+        <!--card with images start-->
+        <div class="row">
+            <h3 class="light center indigo-text">Tempat Liburan Favorit</h3>
+
+            <!--1st card-->
+            <div class="col s12 m4">
+                <!--taruh didalam column-->
+                <!--card with image start-->
+                <div class="card">
+                    <div class="card-image"><img src="img/bali.jpg" alt="card image"><span
+                            class="card-title">Bali</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolor dolorem quia
+                            tenetur.
+                            A, quo.</p>
+                    </div>
+                </div>
+                <!--card with image end-->
+
+            </div>
+
+            <!--2nd card-->
+            <div class="col s12 m4">
+                <!--taruh didalam column-->
+                <!--card with image start-->
+                <div class="card">
+                    <div class="card-image"><img src="img/bromo.jpg" alt="card image"><span
+                            class="card-title">Bromo</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolor dolorem quia
+                            tenetur.
+                            A, quo.</p>
+                    </div>
+                </div>
+                <!--card with image end-->
+
+            </div>
+
+            <!--3rd card-->
+            <div class="col s12 m4">
+                <!--taruh didalam column-->
+                <!--card with image start-->
+                <div class="card">
+                    <div class="card-image"><img src="img/raja-ampat.jpg" alt="card image"><span class="card-title">Raja
+                            Ampat</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolor dolorem quia
+                            tenetur.
+                            A, quo.</p>
+                    </div>
+                </div>
+                <!--card with image end-->
+
+            </div>
+
+        </div>
+        <!--card with images end-->
+
+        <!--booking button start-->
+        <div class="row center">
+            <!--button start-->
+            <a class="waves-effect waves-light btn pink"><i class="material-icons left">message</i>hubungi kami
+                sekarang</a>
+            <!--button end-->
+        </div>
+        <!--booking button end-->
+    </section>
+    <!-- popular place start -->
+
+    <!--social media start-->
+    <section class="section indigo lighten-1 white-text center">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 offset-m2">
+                    <h3 class="light">Follow travelGaes</h3>
+                    <p>Follow us on social media for special offers</p>
+                    <div style="margin-top: 2em">
+                        <a class="sosmed-icon" href="https://facebook.com">
+                            <i class="fab fa-facebook-square small pink-on-hover" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="sosmed-icon" href="https://twitter.com">
+                            <i class="fab fa-twitter small pink-on-hover" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="sosmed-icon" href="https://twitter.com">
+                            <i class="fab fa-linkedin small pink-on-hover" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="sosmed-icon" href="https://twitter.com">
+                            <i class="fab fa-instagram small pink-on-hover" aria-hidden="true"></i>
+                        </a>
+                        <a class="sosmed-icon" href="https://twitter.com">
+                            <i class="fab fa-pinterest small pink-on-hover" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--social media end-->
+
+    <!--gallery start-->
+    <section id="gallery-section" class="section scrollspy">
+        <div class="container">
+            <div class="row">
+                <h3 class="center indigo-text light">Album Foto</h3>
+                <!--images start-->
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=15">
+                </div>
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=16">
+                </div>
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=1">
+                </div>
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=10">
+                </div>
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=6">
+                </div>
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=2">
+                </div>
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=3">
+                </div>
+                <div class="col s12 m3" style="margin-bottom: 1em;">
+                    <img class="materialboxed responsive-img" src="https://placeimg.com/420/320/nature/image=8">
+                </div>
+                <!--images start-->
+            </div>
+        </div>
+    </section>
+    <!--gallery end-->
+
+    <!--contact us section start-->
+    <section id="contact-us-section" class="section grey lighten-4 scrollspy">
+
+        <!--1st row, alamat dan email-->
+        <div class="container">
+
+            <!--title start-->
+            <h3 class="center indigo-text light">Punya Pertanyaan? Hubungi Kami</h3>
+            <!--title end-->
+
+            <!-- alamat dan contact row start-->
+            <div class="row row-flex">
+                <!--alamat start-->
+                <div class="col s12 m6 row-flex--item">
+                    <!--card start-->
+                    <div class="card-panel h-100">
+                        <h5 class="indigo-text">Kantor Pusat</h5>
+                        <p class="grey-text">Jalan KH. Noer Ali, Bekasi Selatan<br>
+                            Pekayon Jaya, Bekasi Selatan<br>
+                            Kota Bks, Jawa Barat 17148</p>
+                    </div>
+                    <!--card end-->
+                </div>
+                <!--alamat end-->
+
+                <!--contact start-->
+                <div class="col s12 m6 row-flex--item">
+                    <!--card start-->
+                    <div class="card-panel h-100">
+                        <h5 class="indigo-text">Telepon & email</h5>
+                        <p class="grey-text"><span><i class="material-icons tiny"
+                                    style="margin-right: 0.25em">phone</i></span>09998987987</p>
+                        <p class="grey-text" style="margin-bottom: 0"><span><i class="material-icons tiny"
+                                    style="margin-right: 0.25em">mail</i></span>09998987987
+                        </p>
+                    </div>
+                    <!--card end-->
+                </div>
+                <!--contact end-->
+            </div>
+            <!-- alamat dan contact end -->
+        </div>
+        <!--1st row end-->
+
+        <!--2nd row, form dan map-->
+        <div class="container">
+            <div class="row row-flex">
+                <div class="col s12 l6 row-flex--item">
+
+                    <!--form start-->
+                    <div class="card-panel h-100">
+                        <form action="#">
+                            <h5 class="indigo-text center">Kirim Pesan Kepada Kami</h5>
+
+                            <!--input name start-->
+                            <div class="input-field indigo-text">
+                                <i class="material-icons prefix">person</i>
+                                <input type="text" id="inputName" placeholder="nama">
+                            </div>
+                            <!--input name end-->
+
+                            <!--input email start-->
+                            <div class="input-field indigo-text">
+                                <i class="material-icons prefix">alternate_email</i>
+                                <input type="text" id="inputEmail" placeholder="email">
+                            </div>
+                            <!--input email end-->
+
+                            <!--input phone start-->
+                            <div class="input-field indigo-text">
+                                <i class="material-icons prefix">phone</i>
+                                <input type="text" id="inputPhone" placeholder="phone">
+                            </div>
+                            <!--input phone end-->
+
+                            <!--input message start-->
+                            <div class="input-field indigo-text">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            </div>
+
+                            <div class="input-field center">
+                                <!--button start-->
+                                <a class="waves-effect waves-light btn indigo"><i
+                                        class="material-icons left">send</i>kirim
+                                    pesan</a>
+                                <!--button end-->
+                            </div>
+
+
+                            <!--input message end-->
+                        </form>
+                        <!--form end-->
+                    </div>
+                    <!--form end-->
+                </div>
+
+                <!--map start-->
+                <div class="col s12 l6 row-flex--item">
+                    <!--card start-->
+                    <div class="card-panel h-100">
+                        <img class="responsive-img" src="img/map.jpg" alt="map kantor">
+                    </div>
+                    <!--card end-->
+                </div>
+                <!-- map end-->
+            </div>
+        </div>
+        <!--2nd row, alamat dan email-->
+
+    </section>
+    <!--contact us section end-->
+
+
+    <!--footer start-->
+    <footer class="page-footer indigo">
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2018 Copyright travelGaes tour and travel
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+
+
+    <!--scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // side-nav start-->
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = null;
+            var instances = M.Sidenav.init(elems, options);
+        });
+        // side-nav script end
+
+        // slider script start
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                height: 500,
+                indicators: false
+            }); // options = indicators, height, duration interval
+        });
+        // slider script end
+
+        //lightbox's script start
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, {});
+        });
+        //lightbox's script end
+
+        // scrollspy's script
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.scrollspy');
+            var options = null;
+            var instances = M.ScrollSpy.init(elems, options);
+        });
+    // scrollspy's script
+
+    </script>
+</body>
+
+</html>
