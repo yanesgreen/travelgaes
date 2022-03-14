@@ -3,5 +3,5 @@
 ## Description
 Web made with materialize css
 
-## Live Link
+## Demo Link
 https://yanesgreen.github.io/travelgaes/
